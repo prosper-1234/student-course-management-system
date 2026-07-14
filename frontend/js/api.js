@@ -16,7 +16,7 @@
 
 // Single source of truth for the backend base URL, as required by the brief.
 // Every fetch call in this app is built on top of this constant.
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://student-course-management-system-wj3q.onrender.com";
 
 const API = (() => {
   // The base URL can still be overridden from the Settings page (useful if
