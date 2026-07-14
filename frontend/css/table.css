@@ -1,0 +1,83 @@
+/* =========================================================
+   TABLE STYLES — View Courses / Search Results
+   ========================================================= */
+
+.table-card {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.courses-table thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--slate-500);
+  font-weight: 600;
+  padding: 14px 18px;
+  border-bottom: 1.5px solid var(--slate-100);
+  white-space: nowrap;
+}
+
+.courses-table tbody tr {
+  animation: rowFadeIn 0.4s ease both;
+  transition: background var(--transition-fast);
+}
+
+.courses-table tbody tr:hover { background: var(--blue-50); }
+
+.courses-table tbody tr:nth-child(1) { animation-delay: 0.02s; }
+.courses-table tbody tr:nth-child(2) { animation-delay: 0.06s; }
+.courses-table tbody tr:nth-child(3) { animation-delay: 0.1s; }
+.courses-table tbody tr:nth-child(4) { animation-delay: 0.14s; }
+.courses-table tbody tr:nth-child(5) { animation-delay: 0.18s; }
+
+@keyframes rowFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.courses-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--slate-100);
+  color: var(--slate-700);
+  vertical-align: middle;
+}
+
+.courses-table tbody tr:last-child td { border-bottom: none; }
+
+.course-code-pill {
+  display: inline-block;
+  background: var(--blue-50);
+  color: var(--blue-700);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 5px 11px;
+  border-radius: 20px;
+}
+
+.unit-pill {
+  display: inline-block;
+  background: var(--slate-100);
+  color: var(--slate-700);
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  min-width: 26px;
+  text-align: center;
+}
+
+.action-cell { display: flex; gap: 8px; }
